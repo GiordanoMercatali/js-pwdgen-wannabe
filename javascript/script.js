@@ -1,7 +1,7 @@
 // Ask user their name, surname and favorite color
 
 // Available info
-const passwordNumber = 21;
+// const passwordNumber = 21;
 
 // Declare other info
 // 1. Ask Name
@@ -22,8 +22,16 @@ const userColor = prompt(`Ok ${userName} ${userSurname}, last question. What's y
 // 3.2 Confirm favorite color
 console.log(userColor, typeof userColor);
 
+// Bonus: Secretly pick a random number
+function getRandomNumber(max) {
+    return Math.floor(Math.random() * max);
+  }
+
+let passwordNumber = getRandomNumber(100);
+
+
 // 4. Generate message containing password
-const userPassword = userName + userSurname + userColor + 21;
+const userPassword = userName + userSurname + userColor + passwordNumber;
 // 4.1. Confirm password
 console.log(userPassword, typeof userPassword);
 // 4.2. Print password
