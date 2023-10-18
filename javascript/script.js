@@ -27,7 +27,7 @@ const userPassword = userName + userSurname + userColor + 21;
 // 4.1. Confirm password
 console.log(userPassword, typeof userPassword);
 // 4.2. Print password
-const passwordMessage = `Congratulations! Your new password is ${userPassword}`;
+alert(`Congratulations! Your new password is ${userPassword}`);
 
 // 5. Add password to HTML;
 // 5.1. Find HTML section where to put the password;
